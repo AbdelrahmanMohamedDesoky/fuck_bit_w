@@ -35,5 +35,5 @@ def encrypt_text(plaintext: str, password: str) -> str:
     return base64.urlsafe_b64encode(combined).decode()
 
 # Example usage:
-encrypted = encrypt_text("This is a very secret message", input("what is your M Pass ?")
+encrypted = encrypt_text("This is a very secret message", input("what is your M Pass ?  "))
 print("Encrypted:", encrypted)

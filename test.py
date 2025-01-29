@@ -50,7 +50,7 @@ def decrypt_text(encrypted_data: str, password: str) -> str:
     unpadder = padding.PKCS7(128).unpadder()
     plaintext = unpadder.update(padded_plaintext) + unpadder.finalize()
     
-    return plaintext.decode()
+    return plaintext.decode()  # <-- Correct return statement
 
 if __name__ == "__main__":
     mode = input("Choose mode (encrypt/decrypt): ").strip().lower()
